@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import sqlite3
 import plotly.express as px
-from data.load_data import load_sakila_data
 
 # Configuración inicial
 st.set_page_config(page_title="Dashboard Sakila", layout="wide")
@@ -10,27 +9,24 @@ st.set_page_config(page_title="Dashboard Sakila", layout="wide")
 # Título de la app
 st.title("Dashboard de Alquileres - Base de Datos Sakila")
 
+# Conexión a la base de datos
+conn = sqlite3.connect('sakila_master.db')
 
-# Conexión a la base de datos y carga de datos
-def load_data():
-    conn = sqlite3.connect('sakila_master.db')
-    
-    try:
-        df_rental = pd.read_sql('SELECT * FROM rental', conn)
-        df_inventory = pd.read_sql('SELECT * FROM inventory', conn)
-        df_film = pd.read_sql('SELECT * FROM film', conn)
-        df_payment = pd.read_sql('SELECT * FROM payment', conn)
-        df_actor = pd.read_sql('SELECT * FROM film_actor', conn)
-        df_category = pd.read_sql('SELECT * FROM category', conn)
-        df_film_category = pd.read_sql('SELECT * FROM film_category', conn)
-    except Exception as e:
-        st.error(f"Error al cargar datos: {e}")
-    finally:
-        conn.close()
-    
-    return df_rental, df_inventory, df_film, df_payment, df_actor, df_category, df_film_category
+# Cargar las tablas necesarias
+try:
+    df_rental = pd.read_sql('SELECT * FROM rental', conn)
+    df_inventory = pd.read_sql('SELECT * FROM inventory', conn)
+    df_film = pd.read_sql('SELECT * FROM film', conn)
+    df_payment = pd.read_sql('SELECT * FROM payment', conn)
+    df_actor = pd.read_sql('SELECT * FROM film_actor', conn)
+    df_category = pd.read_sql('SELECT * FROM category', conn)
+    df_film_category = pd.read_sql('SELECT * FROM film_category', conn)
+except Exception as e:
+    st.error(f"Error al cargar datos: {e}")
+    conn.close()
+    raise
 
-df_rental, df_inventory, df_film, df_payment, df_actor, df_category, df_film_category = load_data()
+conn.close()
 
 # Filtros en la barra lateral
 st.sidebar.header('Filtros')
