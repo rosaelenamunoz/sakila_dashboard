@@ -12,3 +12,4 @@ El objetivo de este análisis es explorar dinámicas clave del negocio a través
 ### Propósito del Proyecto  
 Este proyecto tiene como objetivo realizar un análisis visual utilizando los datos de la base de datos sakila con el fin de identificar patrones y relaciones clave en el negocio de alquiler de películas. 
 """)
+st.image('/Users/rosaelenamunoz/Documents/proyecto/sakila_dashboard/imagen.png')
