@@ -10,19 +10,5 @@ El objetivo de este análisis es explorar dinámicas clave del negocio a través
  
 
 ### Propósito del Proyecto  
-A través de los siguientes análisis visuales, se busca:
-- **Relación entre pagos y empleados**: Utilizando un gráfico de dispersión, 
-se analiza cómo los pagos de los clientes están relacionados con los empleados encargados, 
-lo que puede ayudar a entender el desempeño de los empleados en función de las ventas.
-  
-- **Distribución de rentas por tienda y categoría**: A través de un gráfico de barras, 
-se examina la cantidad total de rentas por tienda y por categoría de películas, 
-lo que permite identificar qué tiendas y qué tipos de películas son más populares, optimizando las estrategias de inventario y marketing.  
-
-- **Análisis de montos de pago por cliente**: Analizando cómo se distribuyen los pagos entre los clientes, se pueden identificar patrones de consumo y clientes con mayor potencial de compra repetitiva.
-
-Estos análisis no solo ayudan a entender las tendencias de alquiler y pago, 
-sino que también permiten identificar áreas de mejora para tomar decisiones estratégicas en cuanto a ventas, marketing e inventario.
-
-Mi enfoque está en aplicar el análisis de datos para resolver problemas comerciales y generar valor estratégico en el entorno de alquiler de películas.
+Este proyecto tiene como objetivo realizar un análisis visual utilizando los datos de la base de datos sakila con el fin de identificar patrones y relaciones clave en el negocio de alquiler de películas. 
 """)
