@@ -12,6 +12,9 @@ st.write("""
 Este proyecto analiza los datos de la base de datos **Sakila** para explorar patrones de comportamiento en los alquileres de películas, 
 evaluar la popularidad de categorías y títulos, y entender las tendencias de ventas mensuales.
 """)
+st.write("""
+Elaborado por: Rosaelena Muñoz Ugalde
+""")
 
 # Conexión a la base de datos y carga de tablas dinámicas
 ruta_bd = 'sakila_master.db'
