@@ -2,7 +2,8 @@ import streamlit as st
 import plotly.express as px
 
 
-st.title("Proyecto Final Programación III")  
+st.title("Proyecto Final")  
+st.title("CETAV")
 st.title("Rosaelena Muñoz Ugalde")
 st.write("""
 Este proyecto explora los datos de la base de datos **Sakila**, una base de datos ficticia utilizada comúnmente en tutoriales y ejemplos de SQL. Contiene información sobre el alquiler de películas, clientes, empleados, pagos y más.  
