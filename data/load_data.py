@@ -6,7 +6,7 @@ def load_sakila_data():
     try:
         conn = sqlite3.connect('sakila.master.db')  # Asegúrate de que el archivo sakila.db esté en el directorio correcto
         query = "SELECT * FROM film"
-        df = pd.read_sql(query, conn)
+        df = pd.read(query, conn)
         conn.close()
         return df
     except Exception as e:
