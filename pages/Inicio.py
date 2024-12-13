@@ -7,7 +7,7 @@ import plotly.express as px
 st.set_page_config(page_title="Dashboard Sakila", layout="wide")
 
 # Título y descripción
-st.title("Análisis de la Base de Datos Sakila")
+st.title("Dashboard de la base de datos Sakila")
 st.write("""
 Este proyecto analiza los datos de la base de datos **Sakila** para explorar patrones de comportamiento en los alquileres de películas, 
 evaluar la popularidad de categorías y títulos, y entender las tendencias de ventas mensuales.
