@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.express as px
 
 
-st.title("Proyecto Final")  
+st.title("Análisis de Datos")  
 st.title("CETAV")
 st.title("Rosaelena Muñoz Ugalde")
 st.write("""
